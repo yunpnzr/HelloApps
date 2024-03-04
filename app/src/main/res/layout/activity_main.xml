@@ -7,17 +7,18 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/img_profile"
+        android:id="@+id/iv_profile"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/name"
-        app:layout_constraintEnd_toEndOf="@+id/name"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:srcCompat="@drawable/img_profile" />
+        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:srcCompat="@drawable/img_profile"
+        android:contentDescription="@string/image_profile" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name"
@@ -28,13 +29,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/name_campuss"
+        android:id="@+id/tv_name_campuss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/name_campuss"
-        app:layout_constraintEnd_toEndOf="@+id/name"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
